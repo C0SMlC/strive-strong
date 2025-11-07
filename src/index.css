@@ -1810,3 +1810,9 @@ html {
     height: 0;
   }
 }
+
+
+.strict-padding {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}

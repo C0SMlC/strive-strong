@@ -10,11 +10,11 @@ import {
 
 export function Hero() {
   return (
-    <section className="pt-24 pb-20 px-16">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section className="pt-24 pb-20 px-20">
+      <div className="max-w-6xl mx-auto strict-padding">
+        <div className="grid lg:grid-cols-2 gap-12 items-center py-16">
           <div>
-            <div className="inline-block bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm mb-6">
+            <div className="inline-block bg-blue-50 text-blue-700 px-16 py-1 rounded-full text-sm mb-6">
               ✨ Trusted by 2,000+ clients in SF Bay Area
             </div>
             <h1 className="text-5xl md:text-6xl mb-6 tracking-tight">
