@@ -30,7 +30,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section id="results" className="py-32 bg-amber-50">
+    <section id="results" className="py-32 bg-amber-50 dark:bg-slate-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -38,10 +38,10 @@ export function Testimonials() {
           viewport={{ once: true }}
           className="mb-20"
         >
-          <h2 className="text-5xl lg:text-6xl mb-6 tracking-tight">
+          <h2 className="text-5xl lg:text-6xl mb-6 tracking-tight dark:text-white transition-colors">
             Real people.
             <br />
-            <span className="text-gray-400">Real results.</span>
+            <span className="text-gray-400 dark:text-gray-500">Real results.</span>
           </h2>
         </motion.div>
 
@@ -53,14 +53,14 @@ export function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-white rounded-3xl p-8 hover:shadow-xl transition-shadow duration-500"
+              className="bg-white dark:bg-slate-800 rounded-3xl p-8 hover:shadow-xl dark:hover:shadow-slate-700 transition-shadow duration-500"
             >
               <div className="flex gap-1 mb-6">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
                 ))}
               </div>
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed transition-colors">
                 "{testimonial.content}"
               </p>
               <div className="flex items-center gap-4">
@@ -68,8 +68,8 @@ export function Testimonials() {
                   {testimonial.avatar}
                 </div>
                 <div>
-                  <div className="text-gray-900">{testimonial.name}</div>
-                  <div className="text-gray-500">{testimonial.role}</div>
+                  <div className="text-gray-900 dark:text-white transition-colors">{testimonial.name}</div>
+                  <div className="text-gray-500 dark:text-gray-400 transition-colors">{testimonial.role}</div>
                 </div>
               </div>
             </motion.div>

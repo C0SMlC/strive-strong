@@ -23,21 +23,21 @@ const steps = [
 
 export function Process() {
   return (
-    <section id="process" className="py-20 px-6">
+    <section id="process" className="py-20 px-6 bg-white dark:bg-slate-950 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl mb-4">How it works</h2>
-          <p className="text-gray-600">Simple, effective, results-focused care</p>
+          <h2 className="text-3xl md:text-4xl mb-4 dark:text-white transition-colors">How it works</h2>
+          <p className="text-gray-600 dark:text-gray-400 transition-colors">Simple, effective, results-focused care</p>
         </div>
 
         <div className="grid md:grid-cols-4 gap-8">
           {steps.map((step) => (
             <div key={step.number} className="text-center">
-              <div className="w-16 h-16 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mx-auto mb-4 text-xl">
+              <div className="w-16 h-16 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400 flex items-center justify-center mx-auto mb-4 text-xl transition-colors">
                 {step.number}
               </div>
-              <h3 className="mb-2">{step.title}</h3>
-              <p className="text-sm text-gray-600">{step.description}</p>
+              <h3 className="mb-2 dark:text-white transition-colors">{step.title}</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400 transition-colors">{step.description}</p>
             </div>
           ))}
         </div>

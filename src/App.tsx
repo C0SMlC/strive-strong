@@ -8,19 +8,22 @@ import { FAQ } from "./components/FAQ";
 import { BookingCTA } from "./components/BookingCTA";
 import { Footer } from "./components/Footer";
 import { Contact } from "./components/Contact";
+import { ThemeProvider } from "./components/ThemeProvider";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Navigation />
-      <Hero />
-      <TreatmentAreas />
-      <Process />
-      <WhyUs />
-      <Results />
-      <FAQ />
-      <BookingCTA />
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="min-h-screen bg-white dark:bg-slate-950 transition-colors duration-300">
+        <Navigation />
+        <Hero />
+        <TreatmentAreas />
+        <Process />
+        <WhyUs />
+        <Results />
+        <FAQ />
+        <BookingCTA />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }

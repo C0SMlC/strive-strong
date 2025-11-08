@@ -27,7 +27,7 @@ const benefits = [
 
 export function WhyUs() {
   return (
-    <section className="py-20 px-6">
+    <section className="py-20 px-6 bg-gray-50 dark:bg-slate-900 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="order-2 lg:order-1">
@@ -68,10 +68,10 @@ export function WhyUs() {
           </div>
 
           <div className="order-1 lg:order-2">
-            <h2 className="text-3xl md:text-4xl mb-4">
+            <h2 className="text-3xl md:text-4xl mb-4 dark:text-white transition-colors">
               Why choose {COMPANY_NAME}?
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-gray-600 dark:text-gray-400 mb-8 transition-colors">
               We're not just another clinic. We focus on getting you real results through evidence-based treatment and genuine care.
             </p>
 
@@ -80,12 +80,12 @@ export function WhyUs() {
                 const Icon = benefit.icon;
                 return (
                   <div key={benefit.title} className="flex gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
-                      <Icon className="w-6 h-6 text-blue-600" />
+                    <div className="w-12 h-12 rounded-lg bg-blue-100 dark:bg-blue-950 flex items-center justify-center flex-shrink-0 transition-colors">
+                      <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400 transition-colors" />
                     </div>
                     <div>
-                      <h3 className="mb-1">{benefit.title}</h3>
-                      <p className="text-sm text-gray-600">{benefit.description}</p>
+                      <h3 className="mb-1 dark:text-white transition-colors">{benefit.title}</h3>
+                      <p className="text-sm text-gray-600 dark:text-gray-400 transition-colors">{benefit.description}</p>
                     </div>
                   </div>
                 );

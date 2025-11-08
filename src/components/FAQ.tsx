@@ -30,20 +30,20 @@ const faqs = [
 
 export function FAQ() {
   return (
-    <section className="py-20 px-6 bg-gray-50">
+    <section className="py-20 px-6 bg-gray-50 dark:bg-slate-900 transition-colors duration-300">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl mb-4">Common questions</h2>
-          <p className="text-gray-600">Everything you need to know before your first visit</p>
+          <h2 className="text-3xl md:text-4xl mb-4 dark:text-white transition-colors">Common questions</h2>
+          <p className="text-gray-600 dark:text-gray-400 transition-colors">Everything you need to know before your first visit</p>
         </div>
 
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="bg-white border border-gray-200 rounded-lg px-6">
-              <AccordionTrigger className="hover:no-underline">
+            <AccordionItem key={index} value={`item-${index}`} className="bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-lg px-6 transition-colors">
+              <AccordionTrigger className="hover:no-underline dark:text-white transition-colors">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600">
+              <AccordionContent className="text-gray-600 dark:text-gray-400 transition-colors">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

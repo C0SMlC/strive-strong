@@ -1812,7 +1812,32 @@ html {
 }
 
 
+/* Dark Mode Styles */
+@supports (color: oklch(from red l c h)) {
+  .dark {
+    color-scheme: dark;
+    --color-gray-50: oklch(.17 .032 264.665);
+    --color-gray-100: oklch(.23 .032 264.665);
+    --color-gray-200: oklch(.29 .031 256.848);
+    --color-gray-400: oklch(.45 .028 256.802);
+    --color-gray-500: oklch(.55 .027 264.364);
+    --color-gray-600: oklch(.63 .03 256.802);
+    --color-gray-800: oklch(.83 .033 256.848);
+    --color-gray-900: oklch(.89 .034 264.665);
+    --color-white: #000;
+    --color-blue-50: oklch(.15 .014 254.604);
+    --color-blue-100: oklch(.2 .032 255.585);
+    --color-blue-200: oklch(.25 .059 254.128);
+    --color-blue-300: oklch(.35 .105 251.813);
+  }
+}
+
 .strict-padding {
     padding-left: 25px !important;
     padding-right: 25px !important;
+}
+
+/* Enhanced dark mode transitions */
+.dark {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }

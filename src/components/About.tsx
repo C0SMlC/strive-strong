@@ -14,7 +14,7 @@ const features = [
 
 export function About() {
   return (
-    <section id="about" className="py-24 px-6">
+    <section id="about" className="py-24 px-6 bg-white dark:bg-slate-950 transition-colors duration-300">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -23,10 +23,10 @@ export function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl text-gray-900 mb-6">
+            <h2 className="text-4xl text-gray-900 dark:text-white mb-6 transition-colors">
               Why Choose {COMPANY_NAME}
             </h2>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-600 dark:text-gray-400 mb-8 leading-relaxed transition-colors">
               We combine clinical expertise with a patient-centered approach to deliver exceptional care. Your recovery and wellness are our top priorities.
             </p>
 
@@ -40,19 +40,19 @@ export function About() {
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   className="flex items-center gap-3"
                 >
-                  <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
-                  <span className="text-gray-700">{feature}</span>
+                  <CheckCircle2 className="w-5 h-5 text-emerald-600 dark:text-emerald-500 flex-shrink-0 transition-colors" />
+                  <span className="text-gray-700 dark:text-gray-300 transition-colors">{feature}</span>
                 </motion.div>
               ))}
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
-              <p className="text-gray-700 italic mb-4">
+            <div className="bg-gray-50 dark:bg-slate-800 rounded-xl p-6 border border-gray-100 dark:border-slate-700 transition-colors">
+              <p className="text-gray-700 dark:text-gray-300 italic mb-4 transition-colors">
                 "Our approach goes beyond treating symptoms. We focus on understanding the root cause of your pain and developing long-term solutions for lasting wellness."
               </p>
               <div>
-                <div className="text-gray-900">Dr. Sarah Mitchell</div>
-                <div className="text-gray-500">Lead Physiotherapist</div>
+                <div className="text-gray-900 dark:text-white transition-colors">Dr. Sarah Mitchell</div>
+                <div className="text-gray-500 dark:text-gray-400 transition-colors">Lead Physiotherapist</div>
               </div>
             </div>
           </motion.div>

@@ -25,7 +25,7 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="py-32 bg-gradient-to-br from-gray-900 to-black text-white">
+    <section id="services" className="py-32 bg-gradient-to-br from-gray-900 dark:from-slate-950 to-black dark:to-slate-900 text-white transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -36,7 +36,7 @@ export function Services() {
           <h2 className="text-5xl lg:text-6xl mb-6 tracking-tight">
             How we help you
             <br />
-            <span className="text-gray-400">move better</span>
+            <span className="text-gray-400 dark:text-gray-500">move better</span>
           </h2>
         </motion.div>
 
@@ -50,14 +50,14 @@ export function Services() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group cursor-pointer"
             >
-              <div className="relative rounded-3xl overflow-hidden bg-gray-900 hover:bg-gray-800 transition-colors duration-500">
+              <div className="relative rounded-3xl overflow-hidden bg-gray-900 dark:bg-slate-900 hover:bg-gray-800 dark:hover:bg-slate-800 transition-colors duration-500">
                 <div className="grid lg:grid-cols-2 gap-8 p-8 lg:p-12 items-center">
                   <div>
                     <div className={`inline-block bg-gradient-to-r ${service.gradient} px-4 py-1 rounded-full text-sm mb-6`}>
                       {`0${index + 1}`}
                     </div>
                     <h3 className="text-4xl lg:text-5xl mb-4">{service.title}</h3>
-                    <p className="text-xl text-gray-400 mb-6">{service.description}</p>
+                    <p className="text-xl text-gray-400 dark:text-gray-500 mb-6 transition-colors">{service.description}</p>
                     <div className="flex items-center gap-2 text-white group-hover:gap-4 transition-all">
                       <span>Learn more</span>
                       <ArrowRight className="w-5 h-5" />

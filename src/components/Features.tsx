@@ -30,7 +30,7 @@ const features = [
 
 export function Features() {
   return (
-    <section className="py-24">
+    <section className="py-24 bg-white dark:bg-slate-950 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => {
@@ -44,13 +44,13 @@ export function Features() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="relative group"
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-5 rounded-3xl scale-0 group-hover:scale-100 transition-transform duration-500`} />
+                <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-5 dark:opacity-10 rounded-3xl scale-0 group-hover:scale-100 transition-transform duration-500`} />
                 <div className="relative p-8">
                   <div className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center mb-6`}>
                     <Icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl mb-3">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
+                  <h3 className="text-xl mb-3 dark:text-white transition-colors">{feature.title}</h3>
+                  <p className="text-gray-600 dark:text-gray-400 transition-colors">{feature.description}</p>
                 </div>
               </motion.div>
             );
