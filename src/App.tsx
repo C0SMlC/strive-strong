@@ -5,7 +5,7 @@ import { Process } from "./components/Process";
 import { WhyUs } from "./components/WhyUs";
 import { Results } from "./components/Results";
 import { FAQ } from "./components/FAQ";
-import { BookingCTA } from "./components/BookingCTA";
+import { FeedbackCTA } from "./components/FeedbackCTA";
 import { Footer } from "./components/Footer";
 import { Contact } from "./components/Contact";
 import { ThemeProvider } from "./components/ThemeProvider";
@@ -21,7 +21,7 @@ export default function App() {
         <WhyUs />
         <Results />
         <FAQ />
-        <BookingCTA />
+        <FeedbackCTA />
         <Footer />
       </div>
     </ThemeProvider>

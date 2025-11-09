@@ -2,6 +2,11 @@ import { Award, Clock, Heart, Users } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { COMPANY_NAME } from "../config/constants";
 
+import img1 from "../assets/img-1.jpg";
+import img2 from "../assets/img-2.jpg";
+import img3 from "../assets/img-3.jpg";
+import img4 from "../assets/img-4.jpg";
+
 const benefits = [
   {
     icon: Award,
@@ -35,15 +40,15 @@ export function WhyUs() {
               <div className="space-y-4">
                 <div className="rounded-xl overflow-hidden">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1591861325451-35ecaa6bfd06?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b2dhJTIwd2VsbG5lc3MlMjBoYXBweXxlbnwxfHx8fDE3NjI0MzU0MjF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                    alt="Wellness"
+                    src={img1}
+                    alt="Hands-on physiotherapy treatment"
                     className="w-full h-48 object-cover"
                   />
                 </div>
                 <div className="rounded-xl overflow-hidden">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1758933286842-9b5d934fbaa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdGhsZXRlJTIwdHJhaW5pbmclMjBtb3ZlbWVudHxlbnwxfHx8fDE3NjI0MzU0MjF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                    alt="Training"
+                    src={img2}
+                    alt="Guided mobility training"
                     className="w-full h-56 object-cover"
                   />
                 </div>
@@ -51,15 +56,15 @@ export function WhyUs() {
               <div className="space-y-4 pt-8">
                 <div className="rounded-xl overflow-hidden">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1761839257789-20147513121a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaXRuZXNzJTIwcmVjb3ZlcnklMjBzdHJldGNoaW5nfGVufDF8fHx8MTc2MjQzNTQyMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                    alt="Recovery"
+                    src={img3}
+                    alt="Recovery exercises with therapist support"
                     className="w-full h-56 object-cover"
                   />
                 </div>
                 <div className="rounded-xl overflow-hidden">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1688079393240-f9f927562d25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZW9wbGUlMjBleGVyY2lzaW5nJTIwdG9nZXRoZXJ8ZW58MXx8fHwxNzYyNDM1NDIxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                    alt="Group exercise"
+                    src={img4}
+                    alt="Small-group strengthening session"
                     className="w-full h-48 object-cover"
                   />
                 </div>
@@ -72,7 +77,8 @@ export function WhyUs() {
               Why choose {COMPANY_NAME}?
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-8 transition-colors">
-              We're not just another clinic. We focus on getting you real results through evidence-based treatment and genuine care.
+              We're not just another clinic. We focus on getting you real
+              results through evidence-based treatment and genuine care.
             </p>
 
             <div className="space-y-6">
@@ -84,8 +90,12 @@ export function WhyUs() {
                       <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400 transition-colors" />
                     </div>
                     <div>
-                      <h3 className="mb-1 dark:text-white transition-colors">{benefit.title}</h3>
-                      <p className="text-sm text-gray-600 dark:text-gray-400 transition-colors">{benefit.description}</p>
+                      <h3 className="mb-1 dark:text-white transition-colors">
+                        {benefit.title}
+                      </h3>
+                      <p className="text-sm text-gray-600 dark:text-gray-400 transition-colors">
+                        {benefit.description}
+                      </p>
                     </div>
                   </div>
                 );

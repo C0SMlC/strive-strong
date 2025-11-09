@@ -20,7 +20,7 @@ const testimonials = [
 
 export function Results() {
   return (
-    <section className="py-20 px-6 bg-blue-600 dark:bg-blue-950 text-white transition-colors duration-300">
+    <section className="py-20 px-6 bg-blue-600 dark:bg-blue-950 text-white dark:text-white transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-center mb-16">
           <div>
@@ -33,7 +33,7 @@ export function Results() {
               ))}
             </div>
             <p className="text-2xl mb-2">4.9/5 average rating</p>
-            <p className="text-blue-100 dark:text-blue-200">
+            <p className="text-blue-100 dark:text-white">
               Based on 847 reviews
             </p>
           </div>
@@ -41,23 +41,19 @@ export function Results() {
           <div className="grid grid-cols-2 gap-6">
             <div className="text-center">
               <div className="text-5xl mb-2">98%</div>
-              <div className="text-blue-100 dark:text-blue-200">
-                Success rate
-              </div>
+              <div className="text-blue-100 dark:text-white">Success rate</div>
             </div>
             <div className="text-center">
               <div className="text-5xl mb-2">Faster</div>
-              <div className="text-blue-100 dark:text-blue-200">Recovery</div>
+              <div className="text-blue-100 dark:text-white">Recovery</div>
             </div>
             <div className="text-center">
               <div className="text-5xl mb-2">2000+</div>
-              <div className="text-blue-100 dark:text-blue-200">
-                Happy clients
-              </div>
+              <div className="text-blue-100 dark:text-white">Happy clients</div>
             </div>
             <div className="text-center">
               <div className="text-5xl mb-2">10+</div>
-              <div className="text-blue-100 dark:text-blue-200">Years exp</div>
+              <div className="text-blue-100 dark:text-white">Years exp</div>
             </div>
           </div>
         </div>
@@ -78,7 +74,7 @@ export function Results() {
               </p>
               <div className="text-sm">
                 <div>{testimonial.author}</div>
-                <div className="text-blue-100 dark:text-blue-200">
+                <div className="text-blue-100 dark:text-white">
                   {testimonial.condition}
                 </div>
               </div>
