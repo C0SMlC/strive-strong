@@ -9,8 +9,8 @@ export const WHATSAPP_URL = `https://wa.me/${CONTACT_PHONE_E164.replace(
   ""
 )}`;
 
-export const CONTACT_EMAIL = "hello@physioflow.com";
-export const CONTACT_EMAIL_LINK = "mailto:hello@physioflow.com";
+export const CONTACT_EMAIL = "strivestrongtherapy@gmail.com";
+export const CONTACT_EMAIL_LINK = `mailto:${CONTACT_EMAIL}`;
 
 export const CONTACT_ADDRESS_LINES = [
   "Strive Strong Physiotherapy Clinic",
