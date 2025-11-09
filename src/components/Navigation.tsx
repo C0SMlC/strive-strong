@@ -13,6 +13,8 @@ export function Navigation() {
               src={logo}
               alt={`${COMPANY_NAME} logo`}
               className="h-8 w-auto "
+              loading="lazy"
+              decoding="async"
             />
             <span className="text-xl dark:text-white transition-colors logo">
               {COMPANY_NAME}

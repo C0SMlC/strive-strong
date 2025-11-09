@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { CheckCircle2 } from "lucide-react";
 import {
   WHATSAPP_URL,
@@ -5,7 +6,21 @@ import {
   CONTACT_PHONE_LINK,
 } from "../config/constants";
 
+const heroImage = new URL("../assets/hero.jpg", import.meta.url).href;
+
 export function Hero() {
+  useEffect(() => {
+    const link = document.createElement("link");
+    link.rel = "preload";
+    link.as = "image";
+    link.href = heroImage;
+    link.setAttribute("fetchpriority", "high");
+    document.head.appendChild(link);
+    return () => {
+      document.head.removeChild(link);
+    };
+  }, []);
+
   return (
     <section className="hero-section relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* ✅ Overlay with working backdrop blur */}
