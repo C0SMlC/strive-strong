@@ -92,8 +92,25 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 dark:border-slate-800 pt-8 text-sm text-gray-400 dark:text-gray-500 text-center transition-colors">
-          &copy; {COPYRIGHT_YEAR} {COMPANY_NAME}. All rights reserved.
+        <div className="border-t border-gray-800 dark:border-slate-800 pt-8 text-sm text-gray-400 dark:text-gray-500 text-center transition-colors space-y-2">
+          <div>
+            &copy; {COPYRIGHT_YEAR} {COMPANY_NAME}. All rights reserved.
+          </div>
+          <div>
+            Designed &amp; developed by{" "}
+            <a
+              href="https://linktr.ee/pratikspendurkar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative inline-flex items-center underline decoration-dotted hover:text-white focus-visible:outline-none transition-colors"
+            >
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute -inset-1 rounded-lg bg-gradient-to-r from-emerald-400/25 via-teal-400/25 to-cyan-400/25 blur-md transition-all duration-300 group-hover:from-emerald-400/45 group-hover:via-teal-400/45 group-hover:to-cyan-400/45 group-hover:blur-lg"
+              />
+              <span className="relative font-medium">Pratik Pendurkar</span>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
