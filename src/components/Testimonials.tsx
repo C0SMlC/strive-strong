@@ -3,34 +3,40 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "Professional Runner",
-    content: "After my knee injury, I thought my career was over. These guys got me back to competing in just 6 weeks. Absolutely life-changing.",
+    name: "Shekar Poojari",
+    role: "Septic Shock Recovery",
+    content:
+      "Dr. Rahul was very helpful and empathetic during my dad’s recovery, guiding him step by step to regain strength and mobility. His encouragement and personalized exercises have greatly improved my father’s independence.",
     rating: 5,
-    avatar: "SJ",
-    color: "from-orange-500 to-amber-500",
+    avatar: "SP",
+    color: "from-blue-500 to-indigo-500",
   },
   {
-    name: "Mike Chen",
-    role: "Software Engineer",
-    content: "Years of back pain from sitting at a desk - gone in 3 weeks. The exercises they gave me actually work. No more pain, no more excuses.",
+    name: "Tanmay Sawant",
+    role: "TB Meningitis Recovery",
+    content:
+      "I took physiotherapy sessions from Dr. Rahul for two months in May and June 2025. He is professional, focused on effective treatment, and explains every exercise clearly. I highly recommend him to anyone seeking relief and meaningful improvement. A huge thank you!",
     rating: 5,
-    avatar: "MC",
-    color: "from-teal-500 to-emerald-500",
+    avatar: "TS",
+    color: "from-purple-500 to-fuchsia-500",
   },
   {
-    name: "Emma Williams",
-    role: "Yoga Instructor",
-    content: "I teach movement for a living and thought I knew everything. Their approach taught me so much about my own body. Game changer.",
+    name: "Ashmita Beg",
+    role: "Dystonic Cerebral Palsy Caregiver",
+    content:
+      "I would like to express my sincere gratitude to Rahul Sir for his exceptional physiotherapy care. His professionalism, patience, and expertise made the recovery process smooth and effective. He explains every step clearly, motivates with kindness, and the positive results have been remarkable.",
     rating: 5,
-    avatar: "EW",
-    color: "from-rose-500 to-pink-500",
+    avatar: "AB",
+    color: "from-cyan-500 to-sky-500",
   },
 ];
 
 export function Testimonials() {
   return (
-    <section id="results" className="py-32 bg-amber-50 dark:bg-slate-900 transition-colors duration-300">
+    <section
+      id="results"
+      className="py-32 bg-amber-50 dark:bg-slate-900 transition-colors duration-300"
+    >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -41,7 +47,9 @@ export function Testimonials() {
           <h2 className="text-5xl lg:text-6xl mb-6 tracking-tight dark:text-white transition-colors">
             Real people.
             <br />
-            <span className="text-gray-400 dark:text-gray-500">Real results.</span>
+            <span className="text-gray-400 dark:text-gray-500">
+              Real results.
+            </span>
           </h2>
         </motion.div>
 
@@ -57,19 +65,28 @@ export function Testimonials() {
             >
               <div className="flex gap-1 mb-6">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
+                  <Star
+                    key={i}
+                    className="w-5 h-5 fill-amber-400 text-amber-400"
+                  />
                 ))}
               </div>
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed transition-colors">
                 "{testimonial.content}"
               </p>
               <div className="flex items-center gap-4">
-                <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${testimonial.color} flex items-center justify-center text-white`}>
+                <div
+                  className={`w-12 h-12 rounded-full bg-gradient-to-br ${testimonial.color} flex items-center justify-center text-white`}
+                >
                   {testimonial.avatar}
                 </div>
                 <div>
-                  <div className="text-gray-900 dark:text-white transition-colors">{testimonial.name}</div>
-                  <div className="text-gray-500 dark:text-gray-400 transition-colors">{testimonial.role}</div>
+                  <div className="text-gray-900 dark:text-white transition-colors">
+                    {testimonial.name}
+                  </div>
+                  <div className="text-gray-500 dark:text-gray-400 transition-colors">
+                    {testimonial.role}
+                  </div>
                 </div>
               </div>
             </motion.div>

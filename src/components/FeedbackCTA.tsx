@@ -16,7 +16,7 @@ export function FeedbackCTA() {
           <div className="flex justify-center">
             <Button className="bg-white text-blue-600 hover:bg-gray-100 dark:hover:bg-gray-200 h-12 px-8 mb-4 whitespace-nowrap transition-colors dark:text-white">
               <a
-                href="https://maps.app.goo.gl/djWw4F6HH3UcstZi6?g_st=ac"
+                href="https://share.google/RVFQgqYYws8Y9EqIt"
                 target="_blank"
                 rel="noopener noreferrer"
               >

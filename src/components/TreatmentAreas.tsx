@@ -31,6 +31,10 @@ const treatments = [
     count: "Vestibular & Balance Training",
   },
   {
+    name: " Pilates and Yoga fitness training ",
+    count: "Core Strength & Flexibility",
+  },
+  {
     name: "Aquatherapy (Personal Pool Available)",
     count: "Hydrotherapy-Based Rehabilitation",
   },

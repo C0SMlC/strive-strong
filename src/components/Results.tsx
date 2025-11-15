@@ -2,19 +2,19 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    text: "I was skeptical but after just 3 sessions my back pain is 90% gone. Wish I came here sooner!",
-    author: "Jennifer M.",
-    condition: "Lower back pain",
+    text: "Dr Rahul was very helpful and empathetic during my dad’s recovery, guiding him step by step to regain strength and mobility. His encouragement and personalized exercises have greatly improved my father’s mobility.",
+    author: "Shekar Poojari",
+    condition: "Septic shock recovery",
   },
   {
-    text: "Best physiotherapy I've ever received. They actually listen and create a plan that works.",
-    author: "Robert K.",
-    condition: "Shoulder injury",
+    text: "Dr Rahul guided me through two months of physiotherapy with clear explanations for every exercise. He is professional, focused on effective treatment, and I can already feel meaningful improvement. A huge thank you!",
+    author: "Tanmay Sawant",
+    condition: "TB meningitis rehabilitation",
   },
   {
-    text: "Got me back running after my knee surgery in half the time my surgeon expected. Amazing.",
-    author: "Lisa T.",
-    condition: "Post-op rehab",
+    text: "Rahul Sir’s exceptional physiotherapy care made the recovery process smooth and effective for my child. His professionalism, patience, and clear guidance motivated us at every step, and the positive results have been remarkable.",
+    author: "Ashmita Beg",
+    condition: "Dystonic cerebral palsy caregiver",
   },
 ];
 
@@ -48,7 +48,7 @@ export function Results() {
               <div className="text-blue-100 dark:text-white">Recovery</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl mb-2">2000+</div>
+              <div className="text-5xl mb-2">200+</div>
               <div className="text-blue-100 dark:text-white">Happy clients</div>
             </div>
             <div className="text-center">
