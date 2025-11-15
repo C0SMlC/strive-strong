@@ -530,6 +530,12 @@
     margin-inline: auto;
   }
 
+  .break-words {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+  }
+
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }

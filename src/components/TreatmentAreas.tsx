@@ -64,7 +64,7 @@ export function TreatmentAreas() {
               key={treatment.name}
               className="bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl p-6 hover:border-blue-300 dark:hover:border-blue-500 hover:shadow-sm dark:hover:shadow-lg dark:hover:shadow-blue-900 transition-all cursor-pointer"
             >
-              <h3 className="mb-1 dark:text-white transition-colors">
+              <h3 className="mb-1 dark:text-white break-words transition-colors">
                 {treatment.name}
               </h3>
               <p className="text-sm text-gray-500 dark:text-gray-400 transition-colors">
