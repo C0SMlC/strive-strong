@@ -61,7 +61,7 @@ export function Footer() {
               </li>
               <li>{CONTACT_ADDRESS_SHORT}</li>
             </ul>
-            <div className="flex items-center gap-3 mt-8">
+            <div className="flex items-center gap-3 mt-2">
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
