@@ -9,18 +9,9 @@ import {
   COPYRIGHT_YEAR,
   WHATSAPP_URL,
 } from "../config/constants";
-import { PhoneCall } from "lucide-react";
 
-function InstagramIcon(props: SVGProps<SVGSVGElement>) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" {...props}>
-      <path
-        fill="currentColor"
-        d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5Zm8.75 2.25a.75.75 0 0 1 .743.648l.007.102v2a.75.75 0 0 1-1.493.102L14 8.5v-2a.75.75 0 0 1 .75-.75ZM12 6.75a5.25 5.25 0 1 1 0 10.5a5.25 5.25 0 0 1 0-10.5Zm0 1.5a3.75 3.75 0 1 0 0 7.5a3.75 3.75 0 0 0 0-7.5Z"
-      />
-    </svg>
-  );
-}
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 export function Footer() {
   return (
@@ -70,7 +61,7 @@ export function Footer() {
               </li>
               <li>{CONTACT_ADDRESS_SHORT}</li>
             </ul>
-            <div className="flex items-center gap-3 mt-4">
+            <div className="flex items-center gap-3 mt-8">
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
@@ -78,7 +69,7 @@ export function Footer() {
                 className="inline-flex items-center justify-center w-9 h-9 rounded-full hover:bg-white/20 transition-colors"
                 aria-label="Chat on WhatsApp"
               >
-                <PhoneCall className="w-4 h-4" />
+                <WhatsAppIcon className="w-4 h-4" />
               </a>
               <a
                 href="https://www.instagram.com/strive_strong_physiotherapy_/"
